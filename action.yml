@@ -1,0 +1,16 @@
+name: 'Setup pulumi environment'
+description: 'Setup a pulumi environment and add it to the PATH'
+
+inputs: 
+  version:
+    description: 'Version of pulumi'
+    required: true
+    default: '1.3.4'
+
+branding:
+  icon: 'gift'
+  color: 'blue'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
