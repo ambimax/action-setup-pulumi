@@ -31,10 +31,12 @@ jobs:
     steps:
     - uses: ambimax/action-setup-pulumi@v1
       with:
-        version: 1.3.4
+        version: 1.12.1
 
     - run: pulumi version
 ```
+
+The version is optional but it is highly recommended to specify it.
 
 
 ## Development

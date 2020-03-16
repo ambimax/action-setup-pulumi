@@ -4,8 +4,8 @@ description: 'Setup a pulumi environment and add it to the PATH'
 inputs: 
   version:
     description: 'Version of pulumi'
-    required: true
-    default: '1.3.4'
+    required: false
+    default: '1.12.1'
 
 branding:
   icon: 'gift'
