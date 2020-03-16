@@ -10,8 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: ambimax/action-setup-pulumi@develop
+    - name: Download current version
+      uses: ambimax/action-setup-pulumi@develop
+    - run: pulumi version
+
+    - name: Download version 1.3.4
+      uses: ambimax/action-setup-pulumi@develop
       with:
         version: 1.3.4
-
     - run: pulumi version
